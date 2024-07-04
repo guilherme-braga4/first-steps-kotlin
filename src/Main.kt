@@ -1,4 +1,5 @@
 import kotlin.reflect.typeOf
+// Collections
 
 fun main() {
     val namesList: MutableList<String> = mutableListOf("Gui", "Rafa", "Gabriel")
@@ -21,4 +22,12 @@ fun main() {
     println(juiceMenu)
     println(readOnlyJuiceMenu.keys)
     println(readOnlyJuiceMenu.values)
+
+    val number2word = mapOf(1 to "one", 2 to "two", 3 to "three")
+    val index = 2
+    println("$index is spelt as '${number2word[index]}'")
+
+    val word2number = mapOf("one" to 1, "two" to 3, "fifty" to 50)
+    val stringNumber = "fifty"
+    println("$stringNumber has value of '${word2number[stringNumber]}'")
 }

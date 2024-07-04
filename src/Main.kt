@@ -11,4 +11,5 @@ fun main() {
     println(customers)
 
     // hotdog = 2 - Val its readonly
+    println("There are ${hotdog + 1} hotdogs")
 }

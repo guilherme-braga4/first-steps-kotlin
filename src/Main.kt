@@ -8,4 +8,10 @@ fun main() {
     println(namesList.count())
     namesList.add("Silvio")
     println("I've add a new name on list: $namesList")
+
+    val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+    println(readOnlyJuiceMenu)
+
+    val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+    println(juiceMenu)
 }

@@ -14,4 +14,11 @@ fun main() {
 
     val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
     println(juiceMenu)
+    println("The value of apple juice is: ${readOnlyJuiceMenu["apple"]}")
+    juiceMenu["coconut"] = 150 // Add key "coconut" with value 150 to the map
+    juiceMenu.remove("orange")    // Remove key "orange" from the map
+    println(readOnlyJuiceMenu.containsKey("kiwi"))
+    println(juiceMenu)
+    println(readOnlyJuiceMenu.keys)
+    println(readOnlyJuiceMenu.values)
 }

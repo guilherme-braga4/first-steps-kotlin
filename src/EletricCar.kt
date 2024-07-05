@@ -1,0 +1,1 @@
+class EletricCar: Car("Tesla") {}

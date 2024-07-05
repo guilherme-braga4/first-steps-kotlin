@@ -1,5 +1,17 @@
 import kotlin.reflect.typeOf
-// Collections
+class Foods(ingredient: String) {
+    init {
+        println("The ingredient is $ingredient")
+    }
+}
+
+class Fastfood {
+    val foodShop: String
+
+    constructor(formula: String, posologia: String) {
+        this.foodShop = formula
+    }
+}
 
 fun main() {
     val namesList: MutableList<String> = mutableListOf("Gui", "Rafa", "Gabriel")
@@ -30,4 +42,6 @@ fun main() {
     val word2number = mapOf("one" to 1, "two" to 3, "fifty" to 50)
     val stringNumber = "fifty"
     println("$stringNumber has value of '${word2number[stringNumber]}'")
+
+    println(Foods("bread", true))
 }

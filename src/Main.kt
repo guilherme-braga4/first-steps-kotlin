@@ -42,6 +42,4 @@ fun main() {
     val word2number = mapOf("one" to 1, "two" to 3, "fifty" to 50)
     val stringNumber = "fifty"
     println("$stringNumber has value of '${word2number[stringNumber]}'")
-
-    println(Foods("bread", true))
 }
